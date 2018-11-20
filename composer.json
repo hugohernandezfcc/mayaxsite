@@ -1,0 +1,13 @@
+{
+    "name": "hugohernandez/mayaxsite",
+    "description": "site of mayax application",
+    "authors": [
+        {
+            "name": "Hugo Hernández",
+            "email": "hugohernandez@MacBook-Pro-de-Hugo.local"
+        }
+    ],
+    "require": {
+        "twig/twig": "^2.5"
+    }
+}
