@@ -6,13 +6,17 @@
 class Home
 {
 	
-	function __construct(argument)
+	function __construct()
 	{
-		echo "ejecutado desde el inicio<br/>";
+		//echo "ejecutado desde el inicio<br/>";
 	}
 
 	public function index(){
-		echo "ejecutado desde el index";
+		Application::view(
+			array(
+				'variable' => 'hugo daniel hernández'
+			)
+		);
 	}
 
 }

@@ -48,9 +48,11 @@
 		 */
 		public function execute(){
 			
-			$this->ctrl->controller = $this->uri[ $this->setEnv(1) ];
+			$this->ctrl->controller = (!empty( $this->uri[ $this->setEnv(1) ] ) ) ? $this->uri[ $this->setEnv(1) ] : 'home';
 			$this->ctrl->method     = (!empty( $this->uri[ $this->setEnv(2) ] ) ) ? $this->uri[ $this->setEnv(2) ] : 'index';
 			$this->ctrl->params     = (!empty( $this->uri[ $this->setEnv(3) ] ) ) ? $this->uri[ $this->setEnv(3) ] : '';
+
+
 		}
 
 		/**
@@ -80,14 +82,6 @@
 				return core\codes::errors('ERR006');
 		}
 
-		/**
-		 * Login SF
-		 */
-		
-		public static function oauth($dataAccess)
-		{
-			return 'https://test.salesforce.com/services/oauth2/authorize?response_type=code&client_id=' . $dataAccess['ck'] . '&redirect_uri=' . $dataAccess['home'] . '&display=page&login_hint=' . $dataAccess['usname'] ;
-		}
 
 		/**
 		 * Método responsable de identificar si el desarrollo esta corriendo sobre un servidor local.
@@ -123,14 +117,44 @@
 			if (strpos($action, 'formStep') !== false) 
 				$action = 'workForms';
 
-			$controller = new $this->ctrl->controller();
+				if($this->existController($this->ctrl->controller)){
+					echo $this->existController($this->ctrl->controller);
+					$controller = new $this->ctrl->controller();
 
-			if(method_exists($controller, $action))
-				$controller->$action();
-			else
-				$controller->index();
+					if(method_exists($controller, $action))
+						$controller->$action();
+					else
+						$controller->index();
+
+				}else{
+					$this->ctrl->controller = 'ExeptionClass';
+					$controller = new ExeptionClass();
+					$controller->e404();
+				}
+
+
+				
 		}
 		
+		public function existController($controllerName){
+
+			$content = scandir($this->router['controllers'], 1);
+			$toReturn = false;
+
+			echo "<pre>";
+				print_r($content);
+
+			for ($i=0; $i < count($content); $i++)  {
+				echo strpos($content[$i], $controllerName);
+				echo strpos($content[$i], $controllerName) . " - " . $content[$i] . ' - ' . $controllerName . '<br/>';
+				if(strpos($content[$i], $controllerName) !== false)
+					return true;
+			}
+
+			return $toReturn;
+			
+		}
+
 
 		public static function param(){
 			$param = new StdClass();
