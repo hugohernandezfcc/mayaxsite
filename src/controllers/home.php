@@ -14,8 +14,7 @@ class Home
 	public function index(){
 		Application::view(
 			array(
-				'variable' => 'hugo daniel hernández',
-				'dom' => $_SERVER['REQUEST_URI']
+				'variable' => 'hugo daniel hernández'
 			)
 		);
 	}

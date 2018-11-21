@@ -38,6 +38,7 @@
 	# Se ejecuta la aplicación.
 	$app->run();
 
+	
 
 	echo $twig->render($app->ctrl->controller . '.html', 
 				Application::view(

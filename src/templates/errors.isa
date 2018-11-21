@@ -1,0 +1,24 @@
+<header id="gtco-header" class="gtco-cover" role="banner">
+	<div class="gtco-container">
+		<div class="row">
+			<div class="col-md-12 col-md-offset-0 text-left">
+				<div class="display-t">
+					<div class="display-tc">
+						<div class="row">
+							<div class="col-md-5 text-center header-img animate-box">
+								<img src="{{dominio}}images/cube_.png" alt="MayaxWhatsApp">
+							</div>
+							<div class="col-md-7 copy animate-box">
+								<h1>{{codeError}} </h1>
+									<p>{{errorMessage}}</p>
+								<br>
+								<p>Powered by <a href="http://www.doitcloudconsulting.mx" target="_blank" style="color: #fff"><b>DoIT Cloud Consulting</b></a></p>
+								<p><a href="https://mayax.doitcloud.mx" target="_blank" class="btn btn-white">Back to home</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
