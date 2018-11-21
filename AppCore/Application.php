@@ -118,7 +118,7 @@
 				$action = 'workForms';
 
 				if($this->existController($this->ctrl->controller)){
-					echo $this->existController($this->ctrl->controller);
+					
 					$controller = new $this->ctrl->controller();
 
 					if(method_exists($controller, $action))
@@ -141,12 +141,12 @@
 			$content = scandir($this->router['controllers'], 1);
 			$toReturn = false;
 
-			echo "<pre>";
-				print_r($content);
+			// echo "<pre>";
+			// 	print_r($content);
 
 			for ($i=0; $i < count($content); $i++)  {
-				echo strpos($content[$i], $controllerName);
-				echo strpos($content[$i], $controllerName) . " - " . $content[$i] . ' - ' . $controllerName . '<br/>';
+				// echo strpos($content[$i], $controllerName);
+				// echo strpos($content[$i], $controllerName) . " - " . $content[$i] . ' - ' . $controllerName . '<br/>';
 				if(strpos($content[$i], $controllerName) !== false)
 					return true;
 			}
@@ -197,10 +197,10 @@
 			if(!isset($toReturn))
 				static $toReturn = NULL;
 
-			// if($toReturn == NULL)
-			// 	$toReturn = array(
-			// 		'dom' => "http://" . $_SERVER["HTTP_HOST"] . '/' . ( ($_SERVER["HTTP_HOST"] == 'localhost') ? 'abilia/' : '' )	
-			// 	);
+			if($toReturn == NULL)
+				$toReturn = array(
+					'dom' => "http://" . $_SERVER["HTTP_HOST"] . '/' . ( ($_SERVER["HTTP_HOST"] == 'localhost') ? 'mayaxsite/' : '' )	
+				);
 				
 			if (count($toPush) > 0) 
 				foreach ($toPush as $key => $value) 

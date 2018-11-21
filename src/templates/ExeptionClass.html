@@ -4,12 +4,17 @@
 		include(
 			"header.isa",
 			{
-				title: "404 mayax"
+				title: "Mayax",
+				dominio : dom 
 			}
 		)
 	}}
 	<body>
 
+
+	<div class="gtco-loader"></div>
+	
+	<div id="page">
 		<header id="gtco-header" class="gtco-cover" role="banner">
 			<div class="gtco-container">
 				<div class="row">
@@ -35,8 +40,11 @@
 
 		{{
 			include(
-				"footer.isa"
+				"footer.isa",{
+					dominio : dom 
+				}
 			)
 		}}
+	</div>
 	</body>
 </html>

@@ -15,7 +15,8 @@
 		{
 			Application::view(
 			array(
-				'variable' => 'No tenemos nada aquí'
+				'variable' => 'No tenemos nada aquí',
+				'dom' => $_SERVER['REQUEST_URI']
 			)
 		);
 		}
