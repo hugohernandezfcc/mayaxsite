@@ -8,6 +8,7 @@
         }
     ],
     "require": {
-        "twig/twig": "^1.34"
+        "twig/twig": "^1.34",
+        "jenssegers/agent": "^2.6"
     }
 }

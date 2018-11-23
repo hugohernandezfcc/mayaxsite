@@ -19,6 +19,11 @@ class ComposerStaticInit3c90c03464ed9c6219aa2f2082800d4d
         array (
             'Symfony\\Polyfill\\Ctype\\' => 23,
         ),
+        'J' => 
+        array (
+            'Jenssegers\\Agent\\' => 17,
+            'Jaybizzle\\CrawlerDetect\\' => 24,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -30,6 +35,14 @@ class ComposerStaticInit3c90c03464ed9c6219aa2f2082800d4d
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
         ),
+        'Jenssegers\\Agent\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/jenssegers/agent/src',
+        ),
+        'Jaybizzle\\CrawlerDetect\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/jaybizzle/crawler-detect/src',
+        ),
     );
 
     public static $prefixesPsr0 = array (
@@ -40,6 +53,17 @@ class ComposerStaticInit3c90c03464ed9c6219aa2f2082800d4d
                 0 => __DIR__ . '/..' . '/twig/twig/lib',
             ),
         ),
+        'D' => 
+        array (
+            'Detection' => 
+            array (
+                0 => __DIR__ . '/..' . '/mobiledetect/mobiledetectlib/namespaced',
+            ),
+        ),
+    );
+
+    public static $classMap = array (
+        'Mobile_Detect' => __DIR__ . '/..' . '/mobiledetect/mobiledetectlib/Mobile_Detect.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
@@ -48,6 +72,7 @@ class ComposerStaticInit3c90c03464ed9c6219aa2f2082800d4d
             $loader->prefixLengthsPsr4 = ComposerStaticInit3c90c03464ed9c6219aa2f2082800d4d::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit3c90c03464ed9c6219aa2f2082800d4d::$prefixDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInit3c90c03464ed9c6219aa2f2082800d4d::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit3c90c03464ed9c6219aa2f2082800d4d::$classMap;
 
         }, null, ClassLoader::class);
     }
