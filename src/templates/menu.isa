@@ -5,17 +5,26 @@
 			<div class="col-sm-2 col-xs-12">
 				<div id="gtco-logo">
 					<a href="index.html">
-						<img src="images/logo.png" alt="Free HTML5 Website Template by FreeHTML5.co"></a>
+						<img src="{{ dominio }}images/logo.png" alt="DoIT Cloud Consulting"></a>
 				</div>
 			</div>
 			<div class="col-xs-10 text-right menu-1">
 				<ul>
-					<li class="active"><a href="index.html">Home</a></li>
-					<li><a href="demo.html">Demo</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					{% if selectedIs == "home" %}
+					   	<li class="active"><a href="{{ dominio }}">Home</a></li>
+						<li><a href="{{ dominio }}demo">Demo</a></li>
+						<li><a href="{{ dominio }}contact">Contact</a></li>
+					{% elseif selectedIs == "demo" %}
+					   	<li><a href="{{ dominio }}">Home</a></li>
+						<li class="active"><a href="{{ dominio }}demo">Demo</a></li>
+						<li><a href="{{ dominio }}contact">Contact</a></li>
+					{% elseif selectedIs == "contact" %}
+					   	<li><a href="{{ dominio }}">Home</a></li>
+						<li><a href="{{ dominio }}demo">Demo</a></li>
+						<li class="active"><a href="{{ dominio }}contact">Contact</a></li>
+					{% endif %}
 				</ul>
 			</div>
 		</div>
-		
 	</div>
 </nav>

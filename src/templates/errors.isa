@@ -13,7 +13,7 @@
 									<p>{{errorMessage}}</p>
 								<br>
 								<p>Powered by <a href="http://www.doitcloudconsulting.mx" target="_blank" style="color: #fff"><b>DoIT Cloud Consulting</b></a></p>
-								<p><a href="https://mayax.doitcloud.mx" target="_blank" class="btn btn-white">Back to home</a></p>
+								<p><a href="http://mayax.doitcloud.mx" class="btn btn-white">Back to home</a></p>
 							</div>
 						</div>
 					</div>

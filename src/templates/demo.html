@@ -1,0 +1,188 @@
+
+<html>
+	{{
+		include(
+			"header.isa",
+			{
+				title: "Mayax",
+				dominio : dom 
+			}
+		)
+	}}
+
+	<style type="text/css">
+		.gtco-heading {
+
+		    margin-bottom: 0em;
+
+		}
+	</style>
+	<body>
+		
+
+	<div class="gtco-loader"></div>
+	
+	<div id="page">
+
+		{{
+			include(
+				"menu.isa",{
+					dominio : dom,
+					selectedIs : "demo"
+				} 
+			)
+		}}
+
+
+		<header id="gtco-header" class="gtco-cover gtco-cover-xs gtco-inner" role="banner">
+			<div class="gtco-container">
+				<div class="row">
+					<div class="col-md-12 col-md-offset-0 text-left">
+						<div class="display-t">
+							<div class="display-tc">
+								<div class="row">
+									<div class="col-md-6 animate-box">
+										<div class="col-md-6 text-center header-img animate-box">
+											<img src="{{dom}}images/sfw.jpg" alt="Salesforce" style="box-shadow: 16px 10px 5px #193919;" width="300%">
+										</div>
+									</div>
+									<div class="col-md-4 copy animate-box" style="padding-left: 220px;">
+										<h3 style="color: white;width: 200px;">Native App </h3>
+										<h1><b>Salesforce</b> </h1>
+										<br/>
+										<img src="{{dom}}images/íconos_maya_pipa-01.png" width="140%">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- END #gtco-header -->
+
+		
+
+		<div class="gtco-section">
+			<div class="gtco-container" align="center">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 gtco-heading text-center">
+						<h2>Would you like see it yourself? </h2>
+						<p>Your customer will not feel a service, will feel a friend</p>
+					</div>
+				
+				<div class="row">
+					<div class="btn-group" data-toggle="buttons">
+					  	<label class="btn btn-primary active">
+					    	<input type="radio" name="options" id="Salesforce" onchange="showImages(this);" autocomplete="off" checked> Salesforce
+					  	</label>
+					  	<label class="btn btn-primary">
+					    	<input type="radio" name="options" id="Customer" onchange="showImages(this);" autocomplete="off"> Customer
+					  	</label>
+					</div> 
+					<br/><br/>
+					<div class="row">
+						<div id="sfdcChat">
+							<img src="{{dom}}images/sfdcchat.jpg">
+						</div>
+						<div id="whatsChat" style="display: none;">
+							<img src="{{dom}}images/whatsss.jpg">
+						</div>
+					</div>						
+				</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+
+			function byid(id) {
+				return document.getElementById(id);
+			}
+
+			function showImages(element) {
+				if(element.id == "Salesforce"){
+					byid("sfdcChat").style.display = "block";
+					byid("whatsChat").style.display = "none";
+				}else{
+					byid("sfdcChat").style.display = "none";
+					byid("whatsChat").style.display = "block";
+				}
+			}
+		</script>
+
+		<!-- END .gtco-services -->
+		
+
+		<footer id="gtco-footer" class="gtco-section" role="contentinfo">
+			<div class="gtco-container">
+				<div class="row row-pb-md">
+					<div class="col-md-8 col-md-offset-2 gtco-cta text-center">
+						<h3>Feel free to ask us all your questions</h3>
+						<p><a href="contact.html" class="btn btn-white btn-outline">Contact Us</a></p>
+					</div>
+				</div>
+				<div class="row row-pb-md">
+					<div class="col-md-4 gtco-widget gtco-footer-paragraph">
+						<p><b>If you are interested in any of our services or products, or simply want more information, We are happy to assist you in <a href="http://www.doitcloudconsulting.mx" target="_blank">DoIT Cloud</a>.</b></p>
+					</div>
+					<div class="col-md-4 gtco-footer-link">
+						<div class="row">
+							<div class="col-md-6">
+								<h3 style="color: #17B794;"><b>Phones</b></h3>
+								<ul class="gtco-list-link">
+									<li><b>(55) 7155 2649</b></li>
+									<li><b>(55) 7155 2896</b></li>
+									<li><b>(55) 7593 8829</b></li>
+									<li><b>(55) 7593 8830</b></li>
+								</ul>
+							</div>
+							<div class="col-md-6">
+								<h3 style="color: #17B794;"><b>Email</b></h3><br><br>
+								<p><b>contacto@doitcloudconsulting.mx</b></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 gtco-footer-subscribe">
+						<form class="form-inline">
+						  <div class="form-group">
+						    <label class="sr-only" for="newletter">Susciber our newletter</label>
+						    <input type="email" class="form-control" id="newletter" placeholder="Email">
+						  </div>
+						  <button type="submit" class="btn btn-primary">Send</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="gtco-copyright">
+				<div class="gtco-container">
+					<div class="row">
+						<div class="col-md-6 text-left">
+							<p><small>&copy; DoIT Cloud Consulting. All Rights Reserved. </small></p>
+						</div>
+						<div class="col-md-6 text-right">
+							<p><small>Powered by <a href="http://www.doitcloudconsulting.mx" target="_blank">DoIT Cloud Consulting</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+	
+
+	{{
+		include(
+			"footer.isa",{
+				dominio : dom 
+			}
+		)
+	}}
+
+	</body>
+</html>
+
