@@ -19,7 +19,8 @@ class Demo
 
 		Application::view(
 			array(
-				'isMobile' => $this->agent->isMobile()
+				'isMobile' => $this->agent->isMobile(),
+				'isTablet' => $this->agent->isTablet()
 			)
 		);
 

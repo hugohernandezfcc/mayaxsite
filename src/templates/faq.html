@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	{{
+		include(
+			"header.isa",
+			{
+				title: "Mayax",
+				dominio : dom 
+			}
+		)
+	}}
+
+	<body>
+		
+
+	<div class="gtco-loader"></div>
+	
+		<div id="page">
+
+			{{
+				include(
+					"menu.isa",{
+						dominio : dom,
+						selectedIs : "faq"
+					} 
+				)
+			}}
+
+			<header id="gtco-header" class="gtco-cover gtco-cover-xs gtco-inner" role="banner">
+			<div class="gtco-container">
+				<div class="row">
+					<div class="col-md-12 col-md-offset-0 text-left">
+						<div class="display-t">
+							<div class="display-tc">
+								<div class="row">
+									<div class="col-md-8 animate-box">
+										<h1 class="no-margin">FAQ</h1>
+										<p>We know that you have questions, here we answer you.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+			<div class="gtco-section" style="padding: 5%;">
+			{{
+				include(
+					"faqs.isa"
+				)
+			}}
+			</div>
+
+			{{
+				include(
+					"footer.isa",{
+						dominio : dom 
+					}
+				)
+			}}
+		</div>
+	</body>
+</html>

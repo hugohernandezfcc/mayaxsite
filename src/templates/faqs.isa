@@ -1,0 +1,87 @@
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Will Mayax be updated when I update WhatsApp?
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        Yes, it will be updated. Mayax has been working and supported since December 2015. Usually there are 3 - 4 updates per year, affecting the work of the Chat API. Within 1 working day, we adapt the API to the changes.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Can I make mass mailings via the Mayax?
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+        You can not. The Mayax allows you to send up to 3,000 (120 per minute) messages per day. BUT! If recipients do not want to receive such messages, they will click the "Spam" button in WhatsApp. Your WhatsApp account will be blocked. It is possible to send only messages that the recipients expect.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Can I print my conversation?
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+        Yes, you can print the conversation per to per. 
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree1">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree1" aria-expanded="false" aria-controls="collapseThree1">
+          Where I will can check the server status?
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree1">
+      <div class="panel-body">
+        In The <a href="#">trust page</a> you will can check the servers status, additional to it <b>we will notify</b> about news, problems or maintenances.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree2">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">
+          Mayax is an Appexchange app?
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree2">
+      <div class="panel-body">
+        We would like it to so be, but is not yet. We are work hard to it happen.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree3">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
+          Mayax use WhatsApp Business API to connection?
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree3">
+      <div class="panel-body">
+        <b>Not, Mayax not use WhatsApp Business API</b>. Mayax use personal account protocols through an API from third parties. They use a particular permission authorized by WhatsApp.
+      </div>
+    </div>
+  </div>
+
+</div>
