@@ -8,6 +8,7 @@
 	# Se carga la clase de toda la aplicación.
 	require_once("AppCore/Application.php" );
 	require_once("AppCore/codes.php" );
+	
 
 	# Se inicia la aplicación.
 	$app = new Application();

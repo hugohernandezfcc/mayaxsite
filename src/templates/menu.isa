@@ -4,8 +4,7 @@
 		<div class="row">
 			<div class="col-sm-2 col-xs-12">
 				<div id="gtco-logo">
-					<a href="index.html">
-						<img src="{{ dominio }}images/logo.png" alt="DoIT Cloud Consulting"></a>
+					<a href="{{ dominio }}">Mayax</a>
 				</div>
 			</div>
 			<div class="col-xs-10 text-right menu-1">
