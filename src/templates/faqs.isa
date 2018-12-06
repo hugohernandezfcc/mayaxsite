@@ -84,4 +84,58 @@
     </div>
   </div>
 
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree4">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree4" aria-expanded="false" aria-controls="collapseThree4">
+          Can we receive calls?
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree4">
+      <div class="panel-body">
+        <b>Not, Mayax not receive calls</b>. The calls just will be received on your phone.
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree5">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree5" aria-expanded="false" aria-controls="collapseThree5">
+          It in all countries where WhatsApp work?
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree5">
+      <div class="panel-body">
+        <b>Yes</b>. 
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree6">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree7" aria-expanded="false" aria-controls="collapseThree7">
+          WhatsApp blocking / banning - Disclaimer 
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree6">
+      <div class="panel-body">
+        WhatsApp monitors closely the type of message you send. Sending unsolicited messages (SPAM) that your recipients are not expecting or want to receive, can result in WhatsApp permanently banning your number or IP. This is an action that WhatsApp takes, and ApiWha has no control or responsibility over it.
+
+        <b>Some cases where we are certain that your number will be banned are:</b>
+          <ul>
+            <li>Sending messages to people that haven’t agreed to receive messages from you or that have no connection to you or your business.</li>
+            <li>Sending messages to numbers that don’t exist or that don’t have WhatsApp installed.</li>
+            <li>Sending messages for debt recovery (people will report it as SPAM).</li>
+            <li>Sending messages to numbers of other countries.</li>
+          </ul>
+
+      </div>
+    </div>
+  </div>
+
 </div>
