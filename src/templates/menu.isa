@@ -12,32 +12,32 @@
 					{% if selectedIs == "home" %}
 					   	<li class="active"><a href="{{ dominio }}">Home</a></li>
 						<li><a href="{{ dominio }}demo">Demo</a></li>
-						<li><a href="{{ dominio }}faq">FAQ</a></li>
 						<li><a href="{{ dominio }}howworkit">How work it?</a></li>
+						<li><a href="{{ dominio }}faq">FAQ</a></li>
 						<li><a href="{{ dominio }}contact">Contact</a></li>
 					{% elseif selectedIs == "demo" %}
 					   	<li><a href="{{ dominio }}">Home</a></li>
 						<li class="active"><a href="{{ dominio }}demo">Demo</a></li>
-						<li><a href="{{ dominio }}faq">FAQ</a></li>
 						<li><a href="{{ dominio }}howworkit">How work it?</a></li>
+						<li><a href="{{ dominio }}faq">FAQ</a></li>
 						<li><a href="{{ dominio }}contact">Contact</a></li>
 					{% elseif selectedIs == "contact" %}
 					   	<li><a href="{{ dominio }}">Home</a></li>
 						<li><a href="{{ dominio }}demo">Demo</a></li>
-						<li><a href="{{ dominio }}faq">FAQ</a></li>
 						<li><a href="{{ dominio }}howworkit">How work it?</a></li>
+						<li><a href="{{ dominio }}faq">FAQ</a></li>
 						<li class="active"><a href="{{ dominio }}contact">Contact</a></li>
 					{% elseif selectedIs == "faq" %}
 					   	<li><a href="{{ dominio }}">Home</a></li>
 						<li><a href="{{ dominio }}demo">Demo</a></li>
-						<li class="active"><a href="{{ dominio }}faq">FAQ</a></li>
 						<li><a href="{{ dominio }}howworkit">How work it?</a></li>
+						<li class="active"><a href="{{ dominio }}faq">FAQ</a></li>
 						<li><a href="{{ dominio }}contact">Contact</a></li>
 					{% elseif selectedIs == "howworkit" %}
 					   	<li><a href="{{ dominio }}">Home</a></li>
 						<li><a href="{{ dominio }}demo">Demo</a></li>
-						<li ><a href="{{ dominio }}faq">FAQ</a></li>
 						<li class="active"><a href="{{ dominio }}howworkit">How work it?</a></li>
+						<li ><a href="{{ dominio }}faq">FAQ</a></li>
 						<li><a href="{{ dominio }}contact">Contact</a></li>
 					{% endif %}
 				</ul>
